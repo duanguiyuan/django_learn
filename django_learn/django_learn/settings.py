@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ['69.194.8.12','www.duanguiyuan.club',]
 # Application definition
 
 INSTALLED_APPS = [
+    'polls',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
