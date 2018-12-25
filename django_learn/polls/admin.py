@@ -13,6 +13,7 @@ class QuestionAdmin(admin.ModelAdmin):
     inlines = [ChoiceInline]
     list_display = ('question_text', 'pub_date')
     list_filter = ['pub_date']
+    search_fields = ['question_text']
 # 问题 Question 对象需要被管理
 #admin.site.register(Question)
 
