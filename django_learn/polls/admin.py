@@ -11,6 +11,7 @@ class ChoiceInline(admin.TabularInline):
 class QuestionAdmin(admin.ModelAdmin):
     fieldsets = [('TTT',{'fields':['question_text']}),('Date information', {'fields':['pub_date']}),]
     inlines = [ChoiceInline]
+    list_display = ('question_text', 'pub_date')
 # 问题 Question 对象需要被管理
 #admin.site.register(Question)
 
